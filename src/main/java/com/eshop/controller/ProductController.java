@@ -32,6 +32,7 @@ public class ProductController {
 	public String listByCategory(Model model, @PathVariable("id") Integer categoryId) {
 		List<Product> list = pdao.findAllByCategory(categoryId);
 		model.addAttribute("prods", list);
+		//cookie.delete("favos");
 		return "product/list";
 	}
 	

@@ -29,22 +29,22 @@
                     </div>
                     <div class="form-group">
                         <label>Unit Price:</label>
-                        <form:input path="unitPrice" placeholder="Unit Price?" class="form-control"/>
+                        <form:input path="unitPrice" type = "number" placeholder="Unit Price?" class="form-control"/>
                     </div>
                     <div class="form-group">
                         <label>Discount:</label>
-                        <form:input path="discount" placeholder="Discount?" class="form-control"/>
+                        <form:input path="discount" type = "number" placeholder="Discount?" class="form-control"/>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label>Quantity:</label>
-                    <form:input path="quantity" placeholder="Quantity?" class="form-control"/>
+                    <form:input path="quantity" type = "number" placeholder="Quantity?" class="form-control"/>
                 </div>
                 <div class="form-group col-sm-6">
                     <label>Product Date:</label>
-                    <form:input path="productDate" placeholder="Product Date?" class="form-control"/>
+                    <form:input path="productDate" type ="date" placeholder="Product Date?"  class="form-control" />
                 </div>
             </div>
             <div class="row">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="form-group col-sm-6">
                     <label>View Count:</label>
-                    <form:input path="clickCount" placeholder="View Count?" class="form-control"/>
+                    <form:input path="clickCount" type = "number" placeholder="View Count?" class="form-control"/>
                 </div>
             </div>
             <div class="row">

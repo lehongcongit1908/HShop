@@ -8,7 +8,7 @@
     <div class="panel-body">
         <div class="row">
             <div class="col-sm-6 text-center">
-                <img class="nn-prod-detail-img" src="/static/images/items/helmet1.png">
+                <img class="nn-prod-detail-img" src="/static/images/items/${prod.image}">
             </div>
             <div class="col-sm-6">
                 <ul>

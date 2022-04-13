@@ -93,10 +93,16 @@ public class CustomerAController {
 		return "admin/customer/index";
 	}
 	
+	
+	
+	
+	
+	
 	@RequestMapping("delete/{id}")
 	public String delete(Model model, @PathVariable("id") String id) {
 		try {
 			cdao.deleteById(id);
+			
 			model.addAttribute("message", "Xóa thành công!");
 		} catch (Exception e) {
 			model.addAttribute("message", "Xóa thất bại!");

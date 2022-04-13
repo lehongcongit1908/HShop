@@ -1,5 +1,4 @@
 package com.eshop.entity;
-
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -39,8 +38,8 @@ public class Order implements Serializable {
 	Date orderDate = new Date();
 	String address;
 	Double amount;
-	String notes;
-	int status = 0; // trạng thái đặt hàng
+	String notes;// =" ";
+	int status; // trạng thái đặt hàng
 	
 	@ManyToOne
 	@JoinColumn(name = "customerid")

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.eshop.dao.CategoryDAO;
@@ -21,19 +22,20 @@ public class HomeController {
 	@Autowired
 	ProductDAO pdao;
 	
-	@RequestMapping({"/", "/home/index"})
+	@RequestMapping(value =  {"/", "/home/index"}, method = RequestMethod.GET)
 	public String index(Model model) {
 		List<Category> list = cdao.findAll();
-		Collections.shuffle(list);
-		list =  list.subList(0, 4);
-		for(Category cate: list) {
-			Collections.shuffle(cate.getProducts());
-			cate.setProducts(cate.getProducts().subList(0, 4));
-		}
+//		Collections.shuffle(list);
+//		list =  list.subList(0, 4);
+//		for(Category cate: list) {
+//			Collections.shuffle(cate.getProducts());
+//			cate.setProducts(cate.getProducts().subList(0, 4));
+//		}
 		model.addAttribute("list", list);
 		
 		List<Product> prods = pdao.findBySpecial();
 		model.addAttribute("prods", prods);
+		
 		
 		return "home/index";
 	}

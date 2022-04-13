@@ -37,22 +37,37 @@ public class ProductAController {
 		return "admin/product/index";
 	}
 	
+	
+	
+	
+	
+	
+	
+	
 	@RequestMapping("edit/{id}")
 	public String edit(Model model, @PathVariable("id") Integer id) {
 		Product bean = pdao.getOne(id);
 		model.addAttribute("form", bean);
+		System.out.println(bean.getId());
 		
 		List<Product> list = pdao.findAll();
 		model.addAttribute("items", list);
 		return "admin/product/index";
 	}
 	
+	
+	
+	
+	
+	
+	
+	
 	@RequestMapping("create")
 	public String create(Model model, 
 			@ModelAttribute("form") Product form,
 			@RequestParam("image_file") MultipartFile image) {
 		try {
-			File file = upload.save(image, "/static/images/users");
+			File file = upload.save(image, "/static/images/items");
 			form.setImage(file == null ? "item.png" : file.getName());
 			pdao.save(form);
 			model.addAttribute("message", "Thêm mới thành công!");
@@ -65,12 +80,27 @@ public class ProductAController {
 		return "admin/product/index";
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@RequestMapping("update")
 	public String update(Model model, 
 			@ModelAttribute("form") Product form,
 			@RequestParam("image_file") MultipartFile image) {
 		try {
-			File file = upload.save(image, "/static/images/users");
+			File file = upload.save(image, "/static/images/items");
 			if(file != null){
 				form.setImage(file.getName());
 			}
@@ -80,9 +110,15 @@ public class ProductAController {
 			model.addAttribute("message", "Cập nhật thất bại!");
 		}
 		List<Product> list = pdao.findAll();
-		model.addAttribute("items", list);
+		model.addAttribute("form", list);
 		return "admin/product/index";
 	}
+	
+	
+	
+	
+	
+	
 	
 	@RequestMapping("delete/{id}")
 	public String delete(Model model, @PathVariable("id") Integer id) {
@@ -98,6 +134,14 @@ public class ProductAController {
 		model.addAttribute("items", list);
 		return "admin/product/index";
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	@Autowired
 	CategoryDAO cdao;
