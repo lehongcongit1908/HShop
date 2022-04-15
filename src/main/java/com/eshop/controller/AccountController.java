@@ -93,7 +93,8 @@ public class AccountController {
 	}
 	@RequestMapping("/account/logoff")
 	public String logoff() {
-		//cookie.delete("visits");
+		cookie.delete("favos");
+		cookie.delete("visits");
 		session.removeAttribute("user");
 		return "redirect:/home/index";
 	}

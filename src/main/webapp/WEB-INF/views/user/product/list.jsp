@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <c:choose>
+       <%--  <c:choose>
         	<c:when test="${p.special}">
         		<img src="/static/images/special_icon.gif">
         	</c:when>
@@ -32,7 +32,7 @@
         	<c:when test="${p.discount > 0}">
         		<img src="/static/images/promo_icon.gif">
         	</c:when>
-        </c:choose>
+        </c:choose> --%>
         
     </div>
 </div>

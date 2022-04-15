@@ -11,10 +11,11 @@
     <div class="list-group">
     	<c:forEach items="${cates}" var="cate">
         <a href="/product/find-by-category/${cate.id}" class="list-group-item">
-        <c:choose>
+        ${cate.nameVN}
+        <%-- <c:choose>
         	<c:when test="${pageContext.response.locale.language == 'vi'}">${cate.nameVN}</c:when>
         	<c:otherwise>${cate.name}</c:otherwise>
-        </c:choose>
+        </c:choose> --%>
             
         </a>
         </c:forEach>

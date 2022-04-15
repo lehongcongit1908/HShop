@@ -10,6 +10,8 @@ import com.eshop.entity.Customer;
 import com.eshop.entity.Product;
 
 public interface ProductDAO extends JpaRepository<Product, Integer>{
+	
+	
 	@Query("SELECT o FROM Product o WHERE o.category.id=?1")
 	List<Product> findAllByCategory(Integer categoryId);
 

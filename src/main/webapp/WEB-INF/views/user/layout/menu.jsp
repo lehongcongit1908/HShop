@@ -43,10 +43,10 @@
                     </ul>
                 </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+           <!--  <ul class="nav navbar-nav navbar-right">
                 <li><a href="/home/index?lang=en"><i class="glyphicon glyphicon-user"></i> English</a></li>
                 <li><a href="/home/index?lang=vi"><i class="glyphicon glyphicon-log-in"></i> Tiếng Việt</a></li>
-            </ul>
+            </ul> -->
         </div>
     </div>
 </nav>

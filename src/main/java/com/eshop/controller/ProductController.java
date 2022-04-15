@@ -38,7 +38,7 @@ public class ProductController {
 	
 	@RequestMapping("/product/find-by-keywords")
 	public String listByKeywords(Model model, @RequestParam("keywords") String keywords) {
-		List<Product> list = pdao.findByKeywords(keywords);
+		List<Product> list = pdao.findByKeywords(keywords);//royal
 		model.addAttribute("prods", list);
 		return "product/list";
 	}
