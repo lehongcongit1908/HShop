@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
 
 <c:set var="url" value="/admin/customer" scope="request"/>
-<h3 class="alert alert-success">CUSTOMER MANAGEMENT</h3>
+<h3 class="alert alert-success">Quản lí khách hàng</h3>
 <ul class="nav nav-tabs">
     <li class="active">
         <a data-toggle="tab" href="#tab1">

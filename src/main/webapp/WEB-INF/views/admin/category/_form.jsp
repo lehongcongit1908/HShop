@@ -9,18 +9,20 @@
         </div>
         <div class="panel-body">
             <div class="form-group">
-                <label>Category Id:</label>
+                <label>Id:</label>
                 <form:input path="id" placeholder="Auto Number" readonly="true" class="form-control"/>
             </div>
             <div class="form-group">
-                <label>English Name:</label>
-                <form:input path="name" placeholder="English Name?" class="form-control"/>
+                <label>Tên tiếng anh:</label>
+                <form:input path="name" placeholder="Tên tiếng anh?" class="form-control"/>
                 <form:errors path="name"/>
             </div>
             <div class="form-group">
-                <label>Vietnamese Name:</label>
-                <form:input path="nameVN" placeholder="Vietnamese Name?" class="form-control"/>
+                <label>Tên tiếng việt:</label>
+                <form:input path="nameVN" placeholder="Tên tiếng việt?" class="form-control"/>
             </div>
+            
+            
         </div>
         <div class="panel-footer text-right">
             <button formaction="${url}/create" ${empty form.id ? '' : 'disabled'} class="btn btn-primary">

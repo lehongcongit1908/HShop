@@ -4,12 +4,12 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Online Shopping Center</title>
+	<title>Đại Phong Helmet</title>
 	<tiles:insertAttribute name="head"/>
 </head>
 <body class="container">
 	<header class="row">
-		<h2>Website Administration</h2>
+		<h2>Trang quản trị</h2>
 	</header>
 	<nav class="row">
 		<tiles:insertAttribute name="menu"/>
@@ -18,7 +18,7 @@
 		<tiles:insertAttribute name="main"/>
 	</main>
 	<footer class="row text-center">
-		<p>&copy; 2021 by Nhất Nghệ. All rights reserved.</p>
+		<p>&copy; Đại phong Helmet</p>
 	</footer>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
 
 <c:set value="/admin/category" var="url" scope="request"/>
-<h2 class="alert alert-success">Category Management</h2>
+<h2 class="alert alert-success">Quản lí loại hàng</h2>
 
 <ul class="nav nav-tabs">
     <li class="active">

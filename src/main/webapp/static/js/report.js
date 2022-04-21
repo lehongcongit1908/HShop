@@ -115,11 +115,11 @@ var charts = {
     		}
     		var tr = `<tr>
                 <td>${item.group}</td>
-                <td>$${Math.round(item.sum*100)/100}</td>
+                <td>${Math.round(item.sum*100)/100}đ</td>
                 <td>${item.count}</td>
-                <td>$${Math.round(100*item.min)/100}</td>
-                <td>$${Math.round(100*item.max)/100}</td>
-                <td>$${Math.round(100*item.avg)/100}</td>
+                <td>${Math.round(100*item.min)/100}đ</td>
+                <td>${Math.round(100*item.max)/100}đ</td>
+                <td>${Math.round(100*item.avg)/100}đ</td>
             </tr> `;
     		trs.push(tr);
     	})

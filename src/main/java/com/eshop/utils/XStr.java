@@ -10,6 +10,8 @@ public class XStr {
 		return new String(Base64.getDecoder().decode(b64Text));
 	}
 	public static void main(String[] args) {
-		System.out.println(XStr.decB64("Y29uZw=="));
+		System.out.println(XStr.encB64("Pham Chi Thien"));
+		
+		System.out.println(XStr.decB64("UGhhbSBDaGkgVGhpZW4="));
 	}
 }

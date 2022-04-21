@@ -1,6 +1,8 @@
 <%@ page pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
 
+
+
 <div class="panel panel-default nn-prod-detail">
 	<div class="panel-heading">
 		<h3 class="panel-title"><strong>CHI TIẾT HÀNG HÓA</strong></h3>
@@ -14,7 +16,7 @@
                 <ul>
                     <li><b>Id</b>: <i>${prod.id}</i></li>
                     <li><b>Tên</b>: <i>${prod.name}</i></li>
-                    <li><b>Giá</b>: <i>${prod.unitPrice} USD</i></li>
+                    <li><b>Giá</b>: <i>${prod.unitPrice} đ</i></li>
                     <li><b>Giảm giá</b>: <i>${prod.discount*100}%</i></li>
                     <li><b>Số lượng còn</b>: <i>${prod.quantity}</i></li>
                     <li><b>Ngày nhập</b>: <i>${prod.productDate}</i></li>

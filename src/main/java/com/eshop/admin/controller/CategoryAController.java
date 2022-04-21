@@ -1,5 +1,6 @@
 package com.eshop.admin.controller;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -11,6 +12,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.eshop.dao.CategoryDAO;
 import com.eshop.entity.Category;
@@ -45,6 +47,7 @@ public class CategoryAController {
 	@RequestMapping("create")
 	public String create(Model model, 
 			@Valid @ModelAttribute("form") Category form,
+			
 			BindingResult errors) {
 		try {
 			if(errors.hasErrors()) {
@@ -59,6 +62,7 @@ public class CategoryAController {
 		}
 		List<Category> list = cdao.findAll();
 		model.addAttribute("items", list);
+//		String a = d.toString();
 		return "admin/category/index";
 	}
 	

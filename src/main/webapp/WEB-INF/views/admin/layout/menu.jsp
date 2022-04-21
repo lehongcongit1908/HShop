@@ -34,7 +34,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="/account/logoff">Đăng xuất</a></li>
                         <li><a href="/account/change">Đổi mật khẩu</a></li>
-                        <li><a href="/admin/master/index">Phân quyền sử dụng</a></li>
+                        <!-- <li><a href="/admin/master/index">Phân quyền sử dụng</a></li> -->
                     </ul>
                 </li>
             </ul>

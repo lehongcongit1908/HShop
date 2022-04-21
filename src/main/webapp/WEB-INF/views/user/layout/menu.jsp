@@ -16,10 +16,10 @@
             <ul class="nav navbar-nav">
                 <li><a href="/home/index"><i class="glyphicon glyphicon-home"></i> <s:message code="layout.menu.home"/> </a></li>
                 <li><a href="#"><i class="glyphicon glyphicon-info-sign"></i> Giới thiệu</a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> Liên hệ</a></li>
+                <!-- <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> Liên hệ</a></li>
                 <li><a href="#"><i class="glyphicon glyphicon-send"></i> Góp ý</a></li>
                 <li><a href="#"><i class="glyphicon glyphicon-question-sign"></i> Hỏi đáp</a></li>
-                <li class="dropdown">
+ -->                <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         Tài khoản
                         <span class="caret"></span>

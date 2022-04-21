@@ -5,6 +5,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
@@ -15,7 +16,9 @@ import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -43,6 +46,31 @@ public class ProductAController {
 		
 		return "admin/product/index";
 	}
+	@ResponseBody
+	@RequestMapping("date")
+	public String hi() {
+		SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd");
+		//Date t =  new Date();
+		//t = s.format(t);
+		
+		Product	p = pdao.getOne(41);
+		System.out.println(p.getProductDate());
+		System.out.println(s.format(p.getProductDate()));
+		return p.getProductDate().toString();
+		//return s.format(t);
+		//return t.toString(); 
+	}
+	
+	@RequestMapping("date2")
+	public String hi2(Model model) {
+		Product	p = pdao.getOne(41);
+		//
+		//SimpleDateFormat s = new SimpleDateFormat("yyy/MM/dd");
+		//Date d2 = new Date();
+		//model.addAttribute("date",d.toString()) ;
+		
+		return "admin/product/date2";
+	}
 	
 	
 	
@@ -56,7 +84,9 @@ public class ProductAController {
 		Product bean = pdao.getOne(id);
 		model.addAttribute("form", bean);
 		System.out.println(bean.getId());
-		
+		String date = bean.getProductDate().toString();		
+		System.out.println(date);
+		model.addAttribute("date", date);
 		List<Product> list = pdao.findAll();
 		model.addAttribute("items", list);
 		return "admin/product/index";
@@ -106,11 +136,13 @@ public class ProductAController {
 	public String update(Model model, 
 			@ModelAttribute("form") Product form,
 			@RequestParam("image_file") MultipartFile image) {
+			
 		try {
 			File file = upload.save(image, "/static/images/items");
 			if(file != null){
 				form.setImage(file.getName());
 			}
+
 			pdao.save(form);
 			model.addAttribute("message", "Cập nhật thành công!");
 		} catch (Exception e) {
@@ -158,5 +190,30 @@ public class ProductAController {
 	}
 	
 	
+	
+	
+////String date = form.getProductDate().toString();	
+////Date date2 = new SimpleDateFormat("yyyy-mm-dd").parse(date);
+////form.setProductDate(date2);
+////String date = form.getProductDate().toString();	
+//
+////String sDate = form.getProductDate().toString();
+////SimpleDateFormat sd = new  SimpleDateFormat("yyyy-mm-dd");
+//
+////Date productdate = form.getProductDate();
+////form.setProductDate(date2);
+//
+////System.out.println(sDate + "\t" + date);
+////form.setProductDate(new Date());
+//
+////System.out.println(date);
+//// Date date2 = new SimpleDateFormat("yyyy-mm-dd").parse(date);
+////form.setProductDate(date2);
+//
+//SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+//
+////String dateInString = "7-Jun-2013";
+//Date date = formatter.parse(dateinput);
+//form.setProductDate(date);
 	
 }

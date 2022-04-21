@@ -16,6 +16,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
@@ -40,7 +42,10 @@ public class Product  implements Serializable{
 	Double unitPrice;
 	double discount;
 	Integer quantity;
+	
+	
 	@Column(name = "productdate")
+	//@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@Temporal(TemporalType.DATE)
 	Date productDate;
 	String description;

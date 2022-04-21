@@ -4,7 +4,7 @@
 
 
 <div class="row">
-	<c:forEach var="p" items="${prods.content}"><!--  Phải có .content vì kiểu dữ liệu truyền qua là page -->
+	<c:forEach var="p" items="${prods}"><!--  Phải có .content vì kiểu dữ liệu truyền qua là page -->
 		<div class="col-sm-4">
 			<div class="panel panel-default nn-prod">
 				<div class="panel-heading text-center">${p.name}</div>
@@ -43,13 +43,13 @@
 	</nav>
 </div>
 
-<nav aria-label="Page navigation example">
+<%-- <nav aria-label="Page navigation example">
 	<ul class="pagination">
 		<li class="page-item"><a class="page-link" href="?p=1">Đầu</a></li>
 		<li class="page-item"><a class="page-link" href="?p=${prods.number-1}"> Pre   </a></li>
 		<li class="page-item"><a class="page-link" href="?p=${prods.number+1}">Next</a></li>
 		<!-- <li class="page-item"><a class="page-link" href="#">3</a></li> -->
 		<li class="page-item"><a class="page-link" href="?p=${prods.totalPages-1}">Cuối</a></li><!--  tổng trang trừ 1(6-1) -->
-	</ul>
+	</ul> --%>
 
 	<%-- <jsp:include page="_send-dialog.jsp" /> --%>

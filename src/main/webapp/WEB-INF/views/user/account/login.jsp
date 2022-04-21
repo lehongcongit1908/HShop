@@ -10,7 +10,7 @@
         <div class="panel-heading">
             <h3 class="panel-title">
                 <i class="glyphicon glyphicon-user"></i>
-                <b>LOGIN</b>
+                <b>Đăng nhập</b>
             </h3>
         </div>
         <div class="panel-body">

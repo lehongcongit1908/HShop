@@ -3,7 +3,7 @@
 
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h3 class="panel-title"><b>CUSTOMER LIST</b></h3>
+        <h3 class="panel-title"><b>Danh sách khách hàng</b></h3>
     </div>
     <table class="table table-hover">
         <thead class="bg-success">

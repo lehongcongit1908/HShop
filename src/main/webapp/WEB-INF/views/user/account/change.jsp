@@ -18,11 +18,11 @@
             </div>
             <div class="form-group">
                 <label><i class="glyphicon glyphicon-lock"></i> Mật khẩu mới:</label>
-                <input name="newpwd" placeholder="New Password?" type="password" class="form-control">
+                <input name="newpwd" placeholder="Mật khẩu mới?" type="password" class="form-control">
             </div>
             <div class="form-group">
                 <label><i class="glyphicon glyphicon-lock"></i> Xác nhận mật khẩu:</label>
-                <input name="confirm" placeholder="Confirm New Password?" type="password" class="form-control">
+                <input name="confirm" placeholder="Xác nhận mật khẩu?" type="password" class="form-control">
             </div>
         </div>
         <div class="panel-footer text-right">

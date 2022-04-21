@@ -1,7 +1,7 @@
 <%@ page pageEncoding="utf-8"%>
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h3 class="panel-title"><b>REPORT DETAIL</b></h3>
+        <h3 class="panel-title"><b>Chi tiết báo cáo</b></h3>
     </div>
     <table class="table table-hover">
         <thead class="bg-info">

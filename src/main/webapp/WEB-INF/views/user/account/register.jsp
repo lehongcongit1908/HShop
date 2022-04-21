@@ -6,7 +6,7 @@
         <div class="panel-heading">
             <h3 class="panel-title">
                 <i class="glyphicon glyphicon-user"></i>
-                <b>REGISTRATION</b>
+                <b>Đăng kí</b>
             </h3>
         </div>
         <div class="panel-body">
@@ -16,34 +16,34 @@
                     <form:input path="id" placeholder="Username?" class="form-control"/>
                 </div>
                 <div class="form-group col-sm-6">
-                    <label><i class="glyphicon glyphicon-text-size"></i> Fullname:</label>
-                    <form:input path="fullname" placeholder="Fullname?" class="form-control"/>
+                    <label><i class="glyphicon glyphicon-text-size"></i> Tên đầy đủ:</label>
+                    <form:input path="fullname" placeholder="Tên đầy đủ?" class="form-control"/>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label><i class="glyphicon glyphicon-lock"></i> Password:</label>
-                    <form:input path="password" placeholder="Password?" type="password" class="form-control"/>
+                    <label><i class="glyphicon glyphicon-lock"></i> Mật khẩu:</label>
+                    <form:input path="password" placeholder="Mật khẩu?" type="password" class="form-control"/>
                 </div>
                 <div class="form-group col-sm-6">
-                    <label><i class="glyphicon glyphicon-lock"></i> Confirm Password:</label>
-                    <input name="confirm" placeholder="Confirm Password?" type="password" class="form-control">
+                    <label><i class="glyphicon glyphicon-lock"></i> Xác nhận mật khẩu:</label>
+                    <input name="confirm" placeholder="Xác nhận mật khẩu?" type="password" class="form-control">
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label><i class="glyphicon glyphicon-picture"></i> Photo:</label>
+                    <label><i class="glyphicon glyphicon-picture"></i> Ảnh:</label>
                     <input name="photo_file" placeholder="Photo?" type="file" class="form-control">
                 </div>
                 <div class="form-group col-sm-6">
-                    <label><i class="glyphicon glyphicon-envelope"></i> Email Address:</label>
-                    <form:input path="email" placeholder="Email Address?" class="form-control"/>
+                    <label><i class="glyphicon glyphicon-envelope"></i> Email:</label>
+                    <form:input path="email" placeholder="Email?" class="form-control"/>
                 </div>
             </div>
         </div>
         <div class="panel-footer text-right">
             <button class="btn btn-default">
-                <i class="glyphicon glyphicon-ok"></i> Sign Up
+                <i class="glyphicon glyphicon-ok"></i> Đăng kí
             </button>
             <b class="pull-left text-danger"><i>${message}</i></b>
         </div>

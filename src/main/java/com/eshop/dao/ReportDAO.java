@@ -40,7 +40,7 @@ public interface ReportDAO extends JpaRepository<Report, Serializable>{
 			+ " max(d.unitPrice), "
 			+ " avg(d.unitPrice)) "
 			+ " FROM OrderDetail d "
-			+ " WHERE d.order.status=4"
+//			+ " WHERE d.order.status=4"
 			+ " GROUP BY d.order.customer"
 			+ " ORDER BY Amount DESC")
 	List<Report> getRevenueByCustomer(Pageable pager);
@@ -52,7 +52,7 @@ public interface ReportDAO extends JpaRepository<Report, Serializable>{
 			+ " max(d.unitPrice), "
 			+ " avg(d.unitPrice)) "
 			+ " FROM OrderDetail d "
-			+ " WHERE d.order.status=4"
+			//+ " WHERE d.order.status=4"
 			+ " GROUP BY year(d.order.orderDate)"
 			+ " ORDER BY Year")
 	List<Report> getRevenueByYear();
@@ -64,7 +64,7 @@ public interface ReportDAO extends JpaRepository<Report, Serializable>{
 			+ " max(d.unitPrice), "
 			+ " avg(d.unitPrice)) "
 			+ " FROM OrderDetail d "
-			+ " WHERE d.order.status=4"
+			//+ " WHERE d.order.status=4"
 			+ " GROUP BY cast(ceiling(month(d.order.orderDate)/3.0) as int)"
 			+ " ORDER BY Quarter")
 	List<Report> getRevenueByQuarter();
@@ -76,7 +76,7 @@ public interface ReportDAO extends JpaRepository<Report, Serializable>{
 			+ " max(d.unitPrice), "
 			+ " avg(d.unitPrice)) "
 			+ " FROM OrderDetail d "
-			+ " WHERE d.order.status=4"
+			//+ " WHERE d.order.status=4"
 			+ " GROUP BY month(d.order.orderDate)"
 			+ " ORDER BY Month")
 	List<Report> getRevenueByMonth();

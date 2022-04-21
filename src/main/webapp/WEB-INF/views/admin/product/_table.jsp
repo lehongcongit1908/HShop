@@ -2,21 +2,21 @@
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h3 class="panel-title"><b>PRODUCT LIST</b></h3>
+        <h3 class="panel-title"><b>Danh sách sản phẩm</b></h3>
     </div>
     <table class="table table-hover">
         <thead class="bg-success">
             <tr>
                 <th>Id</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Discount</th>
-                <th>Quantity</th>
-                <th>Product Date</th>
-                <th>Latest</th>
-                <th>Special</th>
-                <th>Views</th>
-                <th>Category</th>
+                <th>Tên</th>
+                <th>Giá</th>
+                <th>Giảm giá</th>
+                <th>Số lượng</th>
+                <th>Ngày nhập</th>
+                <th>Hàng mới</th>
+                <th>Đặc biệt</th>
+                <th>Lượt xem</th>
+                <th>Loại hàng</th>
                 <th></th>
             </tr>
         </thead>
