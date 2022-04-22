@@ -52,6 +52,8 @@
 					<label>Product Date:</label>
 					<form:input path="productDate" 	type = "date" placeholder="Product Date?" class="form-control" />
 				</div>
+				
+				
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-6">
