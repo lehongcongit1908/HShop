@@ -47,7 +47,6 @@ public class Product  implements Serializable{
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@Column(name = "productdate")
-	
 	Date productDate;
 	
 	

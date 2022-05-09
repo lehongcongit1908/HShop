@@ -15,7 +15,7 @@
         <div class="collapse navbar-collapse" id="hmenu">
             <ul class="nav navbar-nav">
                 <li><a href="/home/index"><i class="glyphicon glyphicon-home"></i> <s:message code="layout.menu.home"/> </a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-info-sign"></i> Giới thiệu</a></li>
+               <!--  <li><a href="#"><i class="glyphicon glyphicon-info-sign"></i> Giới thiệu</a></li> -->
                 <!-- <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> Liên hệ</a></li>
                 <li><a href="#"><i class="glyphicon glyphicon-send"></i> Góp ý</a></li>
                 <li><a href="#"><i class="glyphicon glyphicon-question-sign"></i> Hỏi đáp</a></li>

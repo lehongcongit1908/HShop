@@ -50,8 +50,9 @@
 				</div>
 				<div class="form-group col-sm-6">
 					<label>Product Date:</label>
-					<form:input path="productDate" 	type = "date" placeholder="Product Date?" class="form-control" />
+					<form:input path="productDate" 	 placeholder="Product Date?" class="form-control" />
 				</div>
+				<!-- type = "date" -->
 				
 				
 			</div>
